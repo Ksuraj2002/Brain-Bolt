@@ -21,15 +21,9 @@ An adaptive infinite quiz platform that serves one question at a time with dynam
 
 - **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
 - **Backend**: Node.js, Express, TypeScript
-- **Database**: PostgreSQL 15
+- **Database**: MongoDB
 - **Cache**: Redis 7
 - **Containerization**: Docker & Docker Compose
-
-## Quick Start
-
-### Prerequisites
-- Docker and Docker Compose installed
-- Node.js 18+ (for local development only)
 
 ### Run with Docker (Recommended - Single Command)
 
@@ -60,26 +54,6 @@ The application will be available at:
 - **Backend API**: http://localhost:4000
 - **Health Check**: http://localhost:4000/health
 
-### Local Development
-
-1. Install dependencies:
-```bash
-npm run install:all
-```
-
-2. Set up environment variables:
-   - Copy `backend/.env.example` to `backend/.env`
-   - Copy `frontend/.env.example` to `frontend/.env`
-
-3. Start PostgreSQL and Redis (via Docker):
-```bash
-docker-compose up postgres redis
-```
-
-4. Start development servers:
-```bash
-npm run dev
-```
 
 ## Project Structure
 
@@ -217,11 +191,7 @@ curl http://localhost:4000/health
 
 - **LLD.md**: Low-Level Design document with architecture, schemas, and algorithms
 - **EDGE_CASES.md**: Comprehensive edge case documentation
-- **README.md**: This file
 
-## License
-
-MIT
 
 ## Notes
 
